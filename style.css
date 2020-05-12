@@ -18,6 +18,7 @@ body {
   position: relative;
   width: 210px;
   height: 330px;
+
 }
 .hat {
   position: absolute;
@@ -77,6 +78,7 @@ body {
   height: 170px;
   border-radius: 0 0 120px 120px;
   overflow: hidden;
+  
 }
 .face i:nth-of-type(1), .face i:nth-of-type(2) {
   position: absolute;
@@ -123,6 +125,10 @@ body {
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
+  animation-name: santamove;
+  animation-duration:2s;
+  animation-interation-count: infinite;
+  animation-direction: alternate;
 }
 
 .beard {
@@ -139,4 +145,12 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-size: 36px;
   color: #fff;
+}
+@keyframes santamove{
+  0%{
+    left:100px;
+  }
+  100%{
+    left:-100px;
+  }
 }
